@@ -18,6 +18,9 @@ import { HomeModule } from './home/home.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PokemonTeamComponent } from './pokemon-team/pokemon-team.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { PokemonTeamIconComponent } from './pokemon-team-icon/pokemon-team-icon.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -25,7 +28,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent],
   imports: [
     BrowserModule,
     FormsModule,

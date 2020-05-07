@@ -1,0 +1,9 @@
+<div class="row my-3" *ngFor="let userPokemon of this.userPokemonTeam; index as i">
+    <div class="col-4">
+        <img class="user-pokemon-image" src="{{userPokemon.url}}" width="100%">
+    </div>
+    <div class="col-8">
+        <h4>{{userPokemon.name}}</h4>
+        <p>Level {{userPokemon.level}} &nbsp;|&nbsp; XP to next lvl</p>
+    </div>
+</div>
