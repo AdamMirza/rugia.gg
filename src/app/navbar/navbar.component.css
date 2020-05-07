@@ -12,8 +12,18 @@ nav {
 
 .search-bar-style {
     opacity: 60%;
+    background-color: #315285;
+    color: #ffffff;
+}
+
+.search-bar-style::placeholder {
+    color: #4771b3;
 }
 
 .search-bar-style:focus {
-    opacity: 100%;
+    opacity: 85%;
+}
+
+[contenteditable="true"]:focus {
+    outline: none !important;
 }

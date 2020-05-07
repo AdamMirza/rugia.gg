@@ -21,6 +21,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PokemonTeamComponent } from './pokemon-team/pokemon-team.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PokemonTeamIconComponent } from './pokemon-team-icon/pokemon-team-icon.component';
+import { AtAGlanceComponent } from './at-a-glance/at-a-glance.component';
+import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
+import { PokemonMovesetComponent } from './pokemon-moveset/pokemon-moveset.component';
+import { StrategyComponent } from './strategy/strategy.component';
+import { StrategyEvBuildsComponent } from './strategy-ev-builds/strategy-ev-builds.component';
+import { StrategyGuidesComponent } from './strategy-guides/strategy-guides.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -28,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent],
+  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent, AtAGlanceComponent, PokemonDetailsComponent, PokemonMovesetComponent, StrategyComponent, StrategyEvBuildsComponent, StrategyGuidesComponent],
   imports: [
     BrowserModule,
     FormsModule,

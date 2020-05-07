@@ -69,6 +69,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
 }
 
 .above-background {
