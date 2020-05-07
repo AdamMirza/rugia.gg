@@ -1,0 +1,19 @@
+nav {
+    margin-top: 40px;
+}
+
+.navbar-brand {
+    font-size: 24pt;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.search-bar-style {
+    opacity: 60%;
+}
+
+.search-bar-style:focus {
+    opacity: 100%;
+}
