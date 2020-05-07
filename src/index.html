@@ -1,14 +1,24 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Angular Electron</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Electron</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
+
 <body>
-  <app-root>Loading...</app-root>
+    <script>
+        const customTitlebar = require('custom-electron-titlebar');
+
+        new customTitlebar.Titlebar({
+            backgroundColor: customTitlebar.Color.fromHex('#444')
+        });
+    </script>
+    <app-root>Loading...</app-root>
 </body>
+
 </html>
