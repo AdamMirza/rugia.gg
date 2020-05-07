@@ -10,7 +10,7 @@ export class PokemonTeamComponent implements OnInit {
   teamName: string;
 
   constructor() {
-    this.teamName = 'Light Bulbs';
+    this.teamName = 'Team Name';
   }
 
   ngOnInit(): void {
