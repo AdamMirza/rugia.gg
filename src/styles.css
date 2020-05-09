@@ -71,6 +71,7 @@ body {
     background-position: top;
     font-size: 1em;
     line-height: 1;
+    overflow: none !important;
 }
 
 .above-background {
@@ -85,4 +86,8 @@ h1 {
 
 *:focus {
     outline: none;
+}
+
+.titlebar {
+    position: absolute;
 }
