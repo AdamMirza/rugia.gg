@@ -96,6 +96,7 @@
   "dependencies": {
     "bootstrap": "4.4.1",
     "custom-electron-titlebar": "3.2.2-hotfix62",
+    "electron-scroller": "0.6.2",
     "jquery": "3.5.1"
   }
 }

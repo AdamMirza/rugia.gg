@@ -2,3 +2,8 @@
     background-color: white;
     border-radius: 50%;
 }
+
+.pokemon-team-icon-block {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}

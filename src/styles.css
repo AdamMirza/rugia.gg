@@ -67,16 +67,10 @@ body {
     background-image: url('assets/background-overlay-gradient.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 80%;
+    background-position: top;
     font-size: 1em;
-    line-height: 1.5;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
+    line-height: 1;
 }
 
 .above-background {
@@ -87,4 +81,8 @@ h1 {
     font-weight: 400;
     font-size: 26pt;
     opacity: 60%;
+}
+
+*:focus {
+    outline: none;
 }
