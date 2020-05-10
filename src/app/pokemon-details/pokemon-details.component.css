@@ -1,0 +1,26 @@
+.pokemon-details-block {
+    padding-top: 10px;
+    background-color: #202b43;
+    border-radius: 1em;
+}
+
+.description-block-title {
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding-top: 13px;
+}
+
+.selected-pokemon-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.current-stat-title {
+    margin-bottom: 0px;
+}
+
+.ev-iv-table {
+    background-color: transparent;
+    border-top: 0;
+}
