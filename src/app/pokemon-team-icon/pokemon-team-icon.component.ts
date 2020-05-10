@@ -11,7 +11,7 @@ export class PokemonTeamIconComponent implements OnInit {
 
   constructor() {
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
+    this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
@@ -19,6 +19,10 @@ export class PokemonTeamIconComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  updateCurrentPokemon(userPokemon: UserPokemon) {
+    console.log(userPokemon);
   }
 
 }

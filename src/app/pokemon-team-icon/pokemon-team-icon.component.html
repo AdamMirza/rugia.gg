@@ -1,10 +1,10 @@
-<div class="row pokemon-team-icon-block" *ngFor="let userPokemon of this.userPokemonTeam; index as i">
-    <div class="col-4">
+<div class="row pokemon-team-icon-block" (click)="updateCurrentPokemon(userPokemon)" *ngFor="let userPokemon of this.userPokemonTeam; index as i">
+    <div class="col-4 user-pokemon-image-block">
         <img class="user-pokemon-image" src="{{userPokemon.url}}" width="100%">
     </div>
     <div class="col-8">
-        <h4>{{userPokemon.name}}</h4>
-        <p>Level {{userPokemon.level}} &nbsp;|&nbsp; XP to next lvl</p>
+        <h5>{{userPokemon.name}}</h5>
+        <p>Level {{userPokemon.level}} &nbsp;|&nbsp; {{userPokemon.xp_to_next_lvl - userPokemon.current_xp}} xp left</p>
         <div class="progress mb-1">
             <div class="progress-bar bg-success" role="progressbar" [style.width]="userPokemon.current_hp + '%'" aria-valuemin="0" aria-valuenow="{{userPokemon.current_hp}}" aria-valuemax="userPokemon.max_hp">
                 HP: {{userPokemon.current_hp}}/{{userPokemon.max_hp}}
@@ -12,7 +12,7 @@
         </div>
         <div class="progress">
             <div class="progress-bar bg-primary" role="progressbar" [style.width]="userPokemon.current_hp + '%'" aria-valuemin="0" aria-valuenow="{{userPokemon.current_hp}}" aria-valuemax="userPokemon.max_hp">
-                Experience: {{userPokemon.current_xp}}/{{userPokemon.xp_to_level_up}}
+                Experience: {{userPokemon.current_xp}}/{{userPokemon.xp_to_next_lvl}}
             </div>
         </div>
     </div>
