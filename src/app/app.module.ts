@@ -28,6 +28,8 @@ import { StrategyComponent } from './strategy/strategy.component';
 import { StrategyEvBuildsComponent } from './strategy-ev-builds/strategy-ev-builds.component';
 import { StrategyGuidesComponent } from './strategy-guides/strategy-guides.component';
 
+import { PokemonDetailService } from './core/services/pokemon-detail.service';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -51,7 +53,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       }
     })
   ],
-  providers: [],
+  providers: [PokemonDetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

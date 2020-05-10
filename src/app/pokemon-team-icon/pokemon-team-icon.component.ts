@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PokemonDetailService } from '../core/services/pokemon-detail.service';
 
 @Component({
   selector: 'app-pokemon-team-icon',
@@ -9,7 +10,7 @@ export class PokemonTeamIconComponent implements OnInit {
 
   userPokemonTeam: UserPokemon[] = [];
 
-  constructor() {
+  constructor(private pds: PokemonDetailService) {
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
@@ -19,10 +20,12 @@ export class PokemonTeamIconComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.pds.setCurrentPokemon(this.userPokemonTeam[0])
   }
 
   updateCurrentPokemon(userPokemon: UserPokemon) {
     console.log(userPokemon);
+    this.pds.setCurrentPokemon(userPokemon);
   }
 
 }
