@@ -24,3 +24,8 @@
     background-color: transparent;
     border-top: 0;
 }
+
+table {
+    font-size: 10pt;
+    line-height: 0.5;
+}

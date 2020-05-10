@@ -13,4 +13,8 @@ export class PokemonDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  log(data) {
+    console.log(data);
+  }
+
 }

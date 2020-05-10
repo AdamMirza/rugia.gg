@@ -67,13 +67,12 @@ export class EvIvList {
   
   constructor(max_hp: EvIvStat, atk: EvIvStat, def: EvIvStat, spAtk: EvIvStat, spDef: EvIvStat, speed: EvIvStat) {
     this.statsList = new Array(6);
-    console.log(max_hp);
-    this.statsList.push(speed);
-    this.statsList.push(spDef);
-    this.statsList.push(spAtk);
-    this.statsList.push(def);
-    this.statsList.push(atk);
-    this.statsList.push(max_hp);
+    this.statsList[5] = speed;
+    this.statsList[4] = spDef;
+    this.statsList[3] = spAtk;
+    this.statsList[2] = def;
+    this.statsList[1] = atk;
+    this.statsList[0] = max_hp;
   }
 }
 
