@@ -29,6 +29,7 @@ import { StrategyEvBuildsComponent } from './strategy-ev-builds/strategy-ev-buil
 import { StrategyGuidesComponent } from './strategy-guides/strategy-guides.component';
 
 import { PokemonDetailService } from './core/services/pokemon-detail.service';
+import { PokemonDetailsWeaknessesComponent } from './pokemon-details-weaknesses/pokemon-details-weaknesses.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -36,7 +37,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent, AtAGlanceComponent, PokemonDetailsComponent, PokemonMovesetComponent, StrategyComponent, StrategyEvBuildsComponent, StrategyGuidesComponent],
+  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent, AtAGlanceComponent, PokemonDetailsComponent, PokemonMovesetComponent, StrategyComponent, StrategyEvBuildsComponent, StrategyGuidesComponent, PokemonDetailsWeaknessesComponent],
   imports: [
     BrowserModule,
     FormsModule,
