@@ -97,7 +97,7 @@ enum StatName {
   MaxHp = "Max HP",
   Atk = "Attack",
   Def = "Defense",
-  SpAtk = "Special Attack",
-  SpDef = "Special Defense",
+  SpAtk = "Sp. Attack",
+  SpDef = "Sp. Defense",
   Speed = "Speed"
 }

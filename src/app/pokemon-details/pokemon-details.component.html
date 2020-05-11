@@ -26,28 +26,35 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <table class="table table-dark ev-iv-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Stat</th>
-                                    <th scope="col">Base</th>
-                                    <th scope="col">IV</th>
-                                    <th scope="col">EV</th>
-                                    <th scope="col">Total{{log(this.pds.getCurrentPokemon().getStatsList())}}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr *ngFor="let evIvStat of this.pds.getCurrentPokemon().getStatsList()">
-                                    <td>{{evIvStat.statName}}</td>
-                                    <td>{{evIvStat.base}}</td>
-                                    <td>{{evIvStat.iv}}</td>
-                                    <td>{{evIvStat.ev}}</td>
-                                    <td>{{evIvStat.total}}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col-6">
+                <table class="table table-dark ev-iv-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Stat</th>
+                            <th scope="col">Base</th>
+                            <th scope="col">IV</th>
+                            <th scope="col">EV</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let evIvStat of this.pds.getCurrentPokemon().getStatsList()">
+                            <td>{{evIvStat.statName}}</td>
+                            <td>{{evIvStat.base}}</td>
+                            <td>{{evIvStat.iv}}</td>
+                            <td>{{evIvStat.ev}}</td>
+                            <td>{{evIvStat.total}}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
