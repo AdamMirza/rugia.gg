@@ -23,8 +23,6 @@ export class PokemonDetailsWeaknessesComponent implements OnInit {
 
     let groupedMatchups = this.pokeApiService.defensiveMatchups(pt1, pt2);
 
-    console.log(groupedMatchups);
-
     let output = [];
 
     for (let matchup of groupedMatchups.matchups) {

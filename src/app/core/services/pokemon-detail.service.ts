@@ -20,7 +20,6 @@ export class PokemonDetailService {
   }
 
   getCurrentMoveset() {
-    console.log(this.currentPokemon.current_moveset);
     return this.currentPokemon.current_moveset;
   }
 }
