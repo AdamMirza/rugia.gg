@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PokemonDetailService } from '../core/services/pokemon-detail.service';
+import { PokemonDetailService, Move } from '../core/services/pokemon-detail.service';
+import { PokemonType } from '../core/services/api/poke-api.service';
 
 @Component({
   selector: 'app-pokemon-team-icon',
@@ -38,6 +39,7 @@ export class UserPokemon {
   xp_to_next_lvl: number;
   current_xp: number;
   stats: EvIvList;
+  current_moveset: Move[];
 
   constructor(name: string, url: string, level: number) {
     this.name = name;
@@ -55,6 +57,11 @@ export class UserPokemon {
       new EvIvStat(StatName.SpDef, 50, 50, 50),
       new EvIvStat(StatName.Speed, 60, 60, 60)
     );
+    this.current_moveset = new Array<Move>();
+    this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
+    this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
+    this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
+    this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
   }
 
   getStatsList() {

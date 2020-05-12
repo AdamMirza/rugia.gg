@@ -81,4 +81,8 @@ export class PokemonTypeIconComponent implements OnInit {
     }
   }
 
+  camelize(pokemonType: PokemonType) {
+    let str = pokemonType;
+    return str.substring(0, 1).toUpperCase() + str.substring(1);
+  }
 }
