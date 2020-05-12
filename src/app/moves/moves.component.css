@@ -11,3 +11,8 @@
 .move-row {
     padding-bottom: 0;
 }
+
+.move-block:hover {
+    background-color: #233a5d;
+    cursor: pointer;
+}
