@@ -12,7 +12,7 @@ export class PokemonTeamIconComponent implements OnInit {
 
   constructor(private pds: PokemonDetailService) {
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://lh3.googleusercontent.com/proxy/2z_2b-uqgw-VEFrzJwbj5Gxu-V2u_Q4fL7-OdEkhft34WD8j0U_IQIXbz4Arr4b9jrbZdeX1kAAzi5Rn7KRq4aSqkZK2RD54', 60));
+    this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c8a2987f-3e2e-4e4d-9aac-27d02b24bdd3/d6th2ej-b07148ff-57c7-46c6-be65-04d41dbb2b97.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));

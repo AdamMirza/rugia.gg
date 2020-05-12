@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -7,8 +11,13 @@ export class PokeApiService {
 
   table: Map<any, any>;
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.table = this.createTypeMap(types, rawData);
+  }
+
+  getPokemonId(pokemonName: string) {
+    return this.http.get("https://pokeapi.co/api/v2/pokemon/" + pokemonName)
+      .subscribe(data => console.log(data));
   }
 
   offensiveMatchups(type: PokemonType) {
