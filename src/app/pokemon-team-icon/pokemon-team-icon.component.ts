@@ -40,6 +40,8 @@ export class UserPokemon {
   current_xp: number;
   stats: EvIvList;
   current_moveset: Move[];
+  type1: PokemonType;
+  type2: PokemonType;
 
   constructor(name: string, url: string, level: number) {
     this.name = name;
@@ -62,6 +64,8 @@ export class UserPokemon {
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
+    this.type1 = PokemonType.GRASS;
+    this.type2 = PokemonType.POISON;
   }
 
   getStatsList() {

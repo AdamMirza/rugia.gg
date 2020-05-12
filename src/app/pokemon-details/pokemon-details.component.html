@@ -5,7 +5,11 @@
                 <h1>{{this.pds.getCurrentPokemon().name}}</h1>
             </div>
             <div class="col-8">
-                <p class="description-block-title">Type1 | Type2</p>
+                <h5 class="py-1 description-block-title">
+                    Type:
+                    <app-pokemon-type-icon [pokemonType]='this.pds.getCurrentPokemon().type1'></app-pokemon-type-icon>
+                    <app-pokemon-type-icon [pokemonType]='this.pds.getCurrentPokemon().type2'></app-pokemon-type-icon>
+                </h5>
             </div>
         </div>
         <div class="row">
