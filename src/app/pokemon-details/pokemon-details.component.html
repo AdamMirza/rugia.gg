@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12 pokemon-details-block">
-        <div class="row">
+        <div class="row description-block-title-full">
             <div class="col-4">
                 <h1>{{this.pds.getCurrentPokemon().name}}</h1>
             </div>
@@ -42,10 +42,11 @@
             <div class="col-6">
                 <div class="row">
                     <div class="col-12">
+                        <h5>Stats</h5>
                         <table class="table table-dark ev-iv-table">
                             <thead>
                                 <tr>
-                                    <th scope="col">Stat</th>
+                                    <th scope="col"></th>
                                     <th scope="col">Base</th>
                                     <th scope="col">IV</th>
                                     <th scope="col">EV</th>
@@ -66,9 +67,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="col-12">
-                            <app-moves [userPokemon]="this.pds.getCurrentPokemon()"></app-moves>
-                        </div>
+                        <app-moves [userPokemon]="this.pds.getCurrentPokemon()"></app-moves>
                     </div>
                 </div>
             </div>

@@ -60,7 +60,7 @@ export class UserPokemon {
       new EvIvStat(StatName.Speed, 60, 60, 60)
     );
     this.current_moveset = new Array<Move>();
-    this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
+    this.current_moveset.push(new Move(PokemonType.FIGHTING, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));

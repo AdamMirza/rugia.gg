@@ -1,3 +1,8 @@
+<div class="row">
+    <div class="col-12">
+        <h5>Moves</h5>
+    </div>
+</div>
 <div class="row move-block" *ngFor="let move of this.userPokemon.current_moveset">
     <div class="col-12">
         <div class="row">
@@ -5,14 +10,14 @@
                 <p>{{move.name}}</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6">
+        <div class="row move-row">
+            <div class="col-4">
                 <app-pokemon-type-icon [pokemonType]="move.type"></app-pokemon-type-icon>
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <p>Power: {{move.power}}</p>
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <p>Acc.: {{move.accuracy}}</p>
             </div>
         </div>
