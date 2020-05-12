@@ -1,8 +1,9 @@
-<div class="row">
+<div class="row weakness-block">
     <div class="col-12">
-        <div class="row" *ngFor="let dmg of dmgs">
-            <div class="col-12" *ngIf="this.getWeaknesses(dmg, 'grass', 'poison').length > 0">
-                <h5>Takes {{dmg}}x dmg from</h5>
+        <h5>Weaknesses</h5>
+        <div class="row weakness-block-body" *ngFor="let dmg of dmgs">
+            <div class="col-12 weakness-block" *ngIf="this.getWeaknesses(dmg, 'grass', 'poison').length > 0">
+                <h6>Takes {{dmg}}x dmg from</h6>
                 <span *ngFor="let type of this.getWeaknesses(dmg, 'grass', 'poison')">
                     <app-pokemon-type-icon [pokemonType]="type.type"></app-pokemon-type-icon>
                 </span>
