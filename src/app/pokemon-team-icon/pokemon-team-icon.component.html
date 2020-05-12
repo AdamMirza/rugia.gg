@@ -6,12 +6,12 @@
         <h5>{{userPokemon.name}}</h5>
         <p>Level {{userPokemon.level}} &nbsp;|&nbsp; {{userPokemon.xp_to_next_lvl - userPokemon.current_xp}} xp left</p>
         <div class="progress mb-1">
-            <div class="progress-bar bg-success" role="progressbar" [style.width]="userPokemon.current_hp + '%'" aria-valuemin="0" aria-valuenow="{{userPokemon.current_hp}}" aria-valuemax="userPokemon.max_hp">
+            <div class="progress-bar bg-success" role="progressbar" [style.width]="userPokemon.current_hp + '%'" aria-valuemin="0" [attr.aria-valuenow]="userPokemon.current_hp" aria-valuemax="userPokemon.max_hp">
                 HP: {{userPokemon.current_hp}}/{{userPokemon.max_hp}}
             </div>
         </div>
         <div class="progress">
-            <div class="progress-bar bg-primary" role="progressbar" [style.width]="userPokemon.current_hp + '%'" aria-valuemin="0" aria-valuenow="{{userPokemon.current_hp}}" aria-valuemax="userPokemon.max_hp">
+            <div class="progress-bar bg-primary" role="progressbar" [style.width]="userPokemon.current_hp + '%'" aria-valuemin="0" [attr.aria-valuenow]="userPokemon.current_hp" aria-valuemax="userPokemon.max_hp">
                 Experience: {{userPokemon.current_xp}}/{{userPokemon.xp_to_next_lvl}}
             </div>
         </div>
