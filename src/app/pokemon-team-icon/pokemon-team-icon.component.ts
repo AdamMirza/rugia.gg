@@ -86,7 +86,6 @@ export class EvIvStat {
   constructor(statName: StatName, base: number, iv: number, ev: number) {
     this.statName = statName;
     this.base = base;
-    console.log(this.base);
     this.iv = iv;
     this.ev = ev;
     this.total = base + iv + ev;
