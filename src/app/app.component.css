@@ -1,6 +1,6 @@
 .scroller-wrapper {
     position: relative;
-    overflow-y: auto;
+    overflow-y: scroll;
     top: 100px;
     left: 0;
     right: 0;
