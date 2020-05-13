@@ -12,9 +12,9 @@ export class PokemonTeamIconComponent implements OnInit {
   userPokemonTeam: UserPokemon[] = [];
 
   constructor(private pds: PokemonDetailService) {
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
+    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/thumb/3bc5c309a3a1a3c.png', 60, PokemonType.GRASS, PokemonType.POISON));
     this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c8a2987f-3e2e-4e4d-9aac-27d02b24bdd3/d6th2ej-b07148ff-57c7-46c6-be65-04d41dbb2b97.png', 60, PokemonType.FIRE));
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
+    this.userPokemonTeam.push(new UserPokemon('Pikachu', 'https://i.pinimg.com/originals/df/bb/4c/dfbb4cefcf179b7b63ec93c74320de40.gif', 60, PokemonType.ELECTRIC));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
     this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
@@ -62,7 +62,7 @@ export class UserPokemon {
     this.current_moveset = new Array<Move>();
     this.current_moveset.push(new Move(PokemonType.FIGHTING, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
-    this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
+    this.current_moveset.push(new Move(PokemonType.ELECTRIC, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.type1 = type1;
     this.type2 = type2;

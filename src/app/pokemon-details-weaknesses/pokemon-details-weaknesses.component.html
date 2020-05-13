@@ -2,9 +2,9 @@
     <div class="col-12">
         <h5>Weaknesses</h5>
         <div class="row weakness-block-body" *ngFor="let dmg of dmgs">
-            <div class="col-12 weakness-block" *ngIf="this.getWeaknesses(dmg, 'grass', 'poison').length > 0">
+            <div class="col-12 weakness-block" *ngIf="this.getWeaknesses(dmg).length > 0">
                 <h6>Takes {{dmg}}x dmg from</h6>
-                <span *ngFor="let type of this.getWeaknesses(dmg, 'grass', 'poison')">
+                <span *ngFor="let type of this.getWeaknesses(dmg)">
                     <app-pokemon-type-icon [pokemonType]="type.type"></app-pokemon-type-icon>
                 </span>
             </div>

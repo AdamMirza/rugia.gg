@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PokemonTypeService } from '../pokemon-type.service';
 import { PokeApiService, PokemonType, Effectiveness, GroupedMatchups } from '../core/services/api/poke-api.service';
+import { UserPokemon } from '../pokemon-team-icon/pokemon-team-icon.component';
 
 @Component({
   selector: 'app-pokemon-details-weaknesses',
@@ -8,6 +9,9 @@ import { PokeApiService, PokemonType, Effectiveness, GroupedMatchups } from '../
   styleUrls: ['./pokemon-details-weaknesses.component.css']
 })
 export class PokemonDetailsWeaknessesComponent implements OnInit {
+
+  @Input()
+  userPokemon: UserPokemon;
   
   dmgs = [4, 2, 1, 0.5, 0.25, 0];
 
@@ -17,9 +21,9 @@ export class PokemonDetailsWeaknessesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getWeaknesses(effectiveness: Effectiveness, type1: string, type2: string = 'None') {
-    let pt1 = this.pokeApiService.getEnumPokemonType(type1);
-    let pt2 = this.pokeApiService.getEnumPokemonType(type2);
+  getWeaknesses(effectiveness: Effectiveness) {
+    let pt1 = this.pokeApiService.getEnumPokemonType(this.userPokemon.type1);
+    let pt2 = this.pokeApiService.getEnumPokemonType(this.userPokemon.type2);
 
     let groupedMatchups = this.pokeApiService.defensiveMatchups(pt1, pt2);
 
