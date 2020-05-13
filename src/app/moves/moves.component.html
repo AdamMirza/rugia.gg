@@ -1,9 +1,11 @@
 <div class="row">
     <div class="col-1"></div>
     <div class="col-10 move-title">
-        <h5>Moves
-            <span class="maximizer no-select" *ngIf="this.maximized" (click)="setMaximizedFalse()" data-toggle="tooltip" data-placement="bottom" title="Click here to hide moves!">&#9650;</span>
-            <span class="maximizer no-select" *ngIf="!this.maximized" (click)="setMaximizedTrue()" data-toggle="tooltip" data-placement="bottom" title="Click here to see moves!">&#9660;</span>
+        <h5 class="maximizer" *ngIf="this.maximized" (click)="setMaximizedFalse()" data-toggle="tooltip" data-placement="bottom" title="Click here to hide moves!">
+            Moves <span class="expand-icon">&#9650;</span>
+        </h5>
+        <h5 class="maximizer" *ngIf="!this.maximized" (click)="setMaximizedTrue()" data-toggle="tooltip" data-placement="bottom" title="Click here to see moves!">
+            Moves <span class="expand-icon">&#9660;</span>
         </h5>
     </div>
     <div class="col-1"></div>
