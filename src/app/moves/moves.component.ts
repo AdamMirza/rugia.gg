@@ -11,9 +11,21 @@ export class MovesComponent implements OnInit {
   @Input()
   userPokemon: UserPokemon;
 
-  constructor() { }
+  maximized: boolean;
+
+  constructor() {
+    this.maximized = true;
+  }
 
   ngOnInit(): void {
+  }
+
+  setMaximizedTrue() {
+    this.maximized = true;
+  }
+
+  setMaximizedFalse() {
+    this.maximized = false;
   }
 
 }

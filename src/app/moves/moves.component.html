@@ -1,24 +1,31 @@
 <div class="row">
-    <div class="col-12">
-        <h5>Moves</h5>
+    <div class="col-1"></div>
+    <div class="col-10 move-title">
+        <h5>Moves
+            <span class="maximizer no-select" *ngIf="this.maximized" (click)="setMaximizedFalse()" data-toggle="tooltip" data-placement="bottom" title="Click here to hide moves!">&#9650;</span>
+            <span class="maximizer no-select" *ngIf="!this.maximized" (click)="setMaximizedTrue()" data-toggle="tooltip" data-placement="bottom" title="Click here to see moves!">&#9660;</span>
+        </h5>
     </div>
+    <div class="col-1"></div>
 </div>
-<div class="row move-block" *ngFor="let move of this.userPokemon.current_moveset">
-    <div class="col-12">
-        <div class="row">
-            <div class="col-6">
-                <p>{{move.name}}</p>
+<div class="move-section" *ngIf="this.maximized">
+    <div class="row move-block" *ngFor="let move of this.userPokemon.current_moveset">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <p>{{move.name}}</p>
+                </div>
             </div>
-        </div>
-        <div class="row move-row">
-            <div class="col-4">
-                <app-pokemon-type-icon [pokemonType]="move.type"></app-pokemon-type-icon>
-            </div>
-            <div class="col-4">
-                <p>Power: {{move.power}}</p>
-            </div>
-            <div class="col-4">
-                <p>Acc.: {{move.accuracy}}</p>
+            <div class="row move-row">
+                <div class="col-4">
+                    <app-pokemon-type-icon [pokemonType]="move.type"></app-pokemon-type-icon>
+                </div>
+                <div class="col-4">
+                    <p>Power: {{move.power}}</p>
+                </div>
+                <div class="col-4">
+                    <p>Acc.: {{move.accuracy}}</p>
+                </div>
             </div>
         </div>
     </div>

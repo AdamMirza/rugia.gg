@@ -6,6 +6,7 @@
     margin-bottom: 10px;
     border-radius: 10px;
     vertical-align: middle;
+    margin-left: 5px;
 }
 
 .move-row {
@@ -15,4 +16,21 @@
 .move-block:hover {
     background-color: #233a5d;
     cursor: pointer;
+}
+
+.move-title {
+    text-align: center;
+}
+
+.maximizer:hover {
+    cursor: pointer;
+}
+
+.maximizer {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    font-size: 11pt;
 }
