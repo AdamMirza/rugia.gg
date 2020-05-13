@@ -12,12 +12,12 @@ export class PokemonTeamIconComponent implements OnInit {
   userPokemonTeam: UserPokemon[] = [];
 
   constructor(private pds: PokemonDetailService) {
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c8a2987f-3e2e-4e4d-9aac-27d02b24bdd3/d6th2ej-b07148ff-57c7-46c6-be65-04d41dbb2b97.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
-    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60));
+    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
+    this.userPokemonTeam.push(new UserPokemon('Charmander', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c8a2987f-3e2e-4e4d-9aac-27d02b24bdd3/d6th2ej-b07148ff-57c7-46c6-be65-04d41dbb2b97.png', 60, PokemonType.FIRE));
+    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
+    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
+    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
+    this.userPokemonTeam.push(new UserPokemon('Bulbasaur', 'https://art.pixilart.com/6ba93206eb9dad5.png', 60, PokemonType.GRASS, PokemonType.POISON));
   }
 
   ngOnInit(): void {
@@ -43,7 +43,7 @@ export class UserPokemon {
   type1: PokemonType;
   type2: PokemonType;
 
-  constructor(name: string, url: string, level: number) {
+  constructor(name: string, url: string, level: number, type1: PokemonType, type2: PokemonType = PokemonType.NONE) {
     this.name = name;
     this.url = url;
     this.level = level;
@@ -64,8 +64,8 @@ export class UserPokemon {
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
     this.current_moveset.push(new Move(PokemonType.FIRE, 'Flamethrower', 90, 100, 15, 'Burns some pokepunks...'));
-    this.type1 = PokemonType.GRASS;
-    this.type2 = PokemonType.POISON;
+    this.type1 = type1;
+    this.type2 = type2;
   }
 
   getStatsList() {
