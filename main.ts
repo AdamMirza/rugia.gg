@@ -22,7 +22,8 @@ function createWindow(): BrowserWindow {
       nodeIntegration: true,
       allowRunningInsecureContent: (serve) ? true : false,
     },
-    frame: false
+    frame: false,
+    titleBarStyle: 'hidden'
   });
 
   if (serve) {
