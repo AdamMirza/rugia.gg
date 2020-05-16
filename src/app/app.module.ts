@@ -37,6 +37,7 @@ import { BuildsComponent } from './builds/builds.component';
 import { TierListComponent } from './tier-list/tier-list.component';
 import { RegionsComponent } from './tier-list/regions/regions.component';
 import { ListComponent } from './tier-list/list/list.component';
+import { MatchupComponent } from './matchup/matchup.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -44,7 +45,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent, AtAGlanceComponent, PokemonDetailsComponent, PokemonMovesetComponent, StrategyComponent, StrategyEvBuildsComponent, StrategyGuidesComponent, PokemonDetailsWeaknessesComponent, PokemonTypeIconComponent, MovesComponent, EvIvTableComponent, BuildsComponent, TierListComponent, RegionsComponent, ListComponent],
+  declarations: [AppComponent, NavbarComponent, PokemonTeamComponent, DashboardComponent, PokemonTeamIconComponent, AtAGlanceComponent, PokemonDetailsComponent, PokemonMovesetComponent, StrategyComponent, StrategyEvBuildsComponent, StrategyGuidesComponent, PokemonDetailsWeaknessesComponent, PokemonTypeIconComponent, MovesComponent, EvIvTableComponent, BuildsComponent, TierListComponent, RegionsComponent, ListComponent, MatchupComponent],
   imports: [
     BrowserModule,
     FormsModule,

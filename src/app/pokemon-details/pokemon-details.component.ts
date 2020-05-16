@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PokemonDetailService } from '../core/services/pokemon-detail.service';
+import { UserPokemon } from '../pokemon-team-icon/pokemon-team-icon.component';
 
 @Component({
   selector: 'app-pokemon-details',
@@ -7,6 +8,9 @@ import { PokemonDetailService } from '../core/services/pokemon-detail.service';
   styleUrls: ['./pokemon-details.component.css']
 })
 export class PokemonDetailsComponent implements OnInit {
+
+  @Input()
+  userPokemon: UserPokemon;
 
   constructor(private pds: PokemonDetailService) { }
 

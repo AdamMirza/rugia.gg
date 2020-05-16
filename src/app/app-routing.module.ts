@@ -6,9 +6,11 @@ import { HomeRoutingModule } from './home/home-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TierListComponent } from './tier-list/tier-list.component';
 import { BuildsComponent } from './builds/builds.component';
+import { MatchupComponent } from './matchup/matchup.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, pathMatch: "full" },
+  { path: 'matchups', component: MatchupComponent, pathMatch: "full" },
   { path: 'builds', component: BuildsComponent, pathMatch: "full" },
   { path: 'tier-list', component: TierListComponent, pathMatch: "full" },
   { path: '**', component: PageNotFoundComponent }
