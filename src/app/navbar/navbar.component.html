@@ -5,14 +5,18 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" routerLink="" routerLinkActive="active">Dashboard<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <!--DashboardComponent-->
+                <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">My Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="" routerLinkActive="active">Builds</a>
+                <a class="nav-link" routerLink="matchups" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Matchup Tool</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="" routerLinkActive="active">Tier List</a>
+                <a class="nav-link" routerLink="builds" routerLinkActive="active">Builds</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="tier-list" routerLinkActive="active">Tier List</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="" routerLinkActive="active">Guild Rankings</a>
