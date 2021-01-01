@@ -14,7 +14,7 @@ function createWindow(): BrowserWindow {
   // Create the browser window.
   win = new BrowserWindow({
     center: true,
-    width: 1350,
+    width: 1250,
     height: 850,
     minWidth: 1200,
     minHeight: 720,
@@ -23,7 +23,8 @@ function createWindow(): BrowserWindow {
       allowRunningInsecureContent: (serve) ? true : false,
     },
     frame: false,
-    titleBarStyle: 'hidden'
+    titleBarStyle: 'hidden',
+    useContentSize: true
   });
 
   if (serve) {
